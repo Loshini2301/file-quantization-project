@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Quantization System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>File Quantization & Reconstruction</h1>
+    <p class="subtitle">Compress MB files into KB and retrieve original data</p>
+
+    <input type="file" id="fileInput">
+
+    <div class="buttons">
+        <button onclick="quantizeFile()">Quantize</button>
+        <button onclick="reconstructFile()">Reconstruct</button>
+    </div>
+
+    <div class="info">
+        <p id="originalSize"></p>
+        <p id="quantizedSize"></p>
+        <p id="ratio"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
